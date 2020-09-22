@@ -1,11 +1,15 @@
-﻿using System;
+﻿using Efcore2.Contexts;
+using Efcore2.Domains;
+using Efcore2.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Efcore2.Repositories
 {
-    public class PedidoRepository
+    public class PedidoRepository : IPedidoRepository
     {
         private readonly PedidoContext _ctx;
 
@@ -80,5 +84,4 @@ namespace Efcore2.Repositories
             }
         }
     }
-}
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Efcore2</name>
+    </assembly>
+    <members>
+        <member name="M:Efcore2.Controllers.ProdutosController.Get">
+            <summary>
+            Mostra todos os produtos cadastrado 
+            </summary>
+            <returns>Lista com todos os produtos</returns>
+        </member>
+        <member name="M:Efcore2.Controllers.ProdutosController.Get(System.Guid)">
+            <summary>
+            Mostra um único produto
+            </summary>
+            <param name="id">ID do produto</param>
+            <returns>Um produto</returns>
+        </member>
+        <member name="M:Efcore2.Controllers.ProdutosController.Post(Efcore2.Domains.Produto)">
+            <summary>
+            Cadastra um novo produto
+            </summary>
+            <param name="produto">Objeto completo de Produto</param>
+            <returns>Produto cadastrado</returns>
+        </member>
+        <member name="M:Efcore2.Controllers.ProdutosController.Put(System.Guid,Efcore2.Domains.Produto)">
+            <summary>
+            Altera determinado produto
+            </summary>
+            <param name="id">ID do produto</param>
+            <param name="produto">Objeto Produto com as alterações</param>
+            <returns>Info do produto alterado</returns>
+        </member>
+        <member name="M:Efcore2.Controllers.ProdutosController.Delete(System.Guid)">
+            <summary>
+            Exclui um produto
+            </summary>
+            <param name="id">ID do produto</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="T:Efcore2.Domains.Produto">
+            <summary>
+            Definição da classe Produto
+            </summary>
+        </member>
+        <member name="M:Efcore2.Interfaces.IPedidoRepository.Adicionar(System.Collections.Generic.List{Efcore2.Domains.PedidoItem})">
+            <summary>
+            Adiciona um novo pedido
+            </summary>
+            <param name="pedidosItens">Itens do pedido</param>
+            <returns>Pedido</returns>
+        </member>
+        <member name="M:Efcore2.Repositories.ProdutoRepository.Listar">
+            <summary>
+            Lista todos os produtos cadastrados
+            </summary>
+            <returns>Retorna uma Lista de Produto</returns>
+        </member>
+        <member name="M:Efcore2.Repositories.ProdutoRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Busca um produto pelo seu Id
+            </summary>
+            <param name="id">Id do Produto</param>
+            <returns>Lista de produto</returns>
+        </member>
+        <member name="M:Efcore2.Repositories.ProdutoRepository.BuscarPorNome(System.String)">
+            <summary>
+            Busca produtos pelo nome
+            </summary>
+            <param name="nome">Nome do Produto</param>
+            <returns>Retorna um produto</returns>
+        </member>
+        <member name="M:Efcore2.Repositories.ProdutoRepository.Editar(Efcore2.Domains.Produto)">
+            <summary>
+            Edita um produto
+            </summary>
+            <param name="produto">Produto a ser editado</param>
+        </member>
+        <member name="M:Efcore2.Repositories.ProdutoRepository.Adicionar(Efcore2.Domains.Produto)">
+            <summary>
+            Adiciona um novo produto
+            </summary>
+            <param name="produto">Objeto do tipo Produto</param>
+        </member>
+        <member name="M:Efcore2.Repositories.ProdutoRepository.Remover(System.Guid)">
+            <summary>
+            Remove um produto
+            </summary>
+            <param name="id">Id do produto</param>
+        </member>
+    </members>
+</doc>
